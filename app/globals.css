@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-red: #ff0033;
+  --color-brand-darkred: #b3001b;
+  --color-bg-dark: #050505;
+  --color-bg-card: #111111;
+  
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+}
+
+@utility text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#ff0033] to-[#b3001b];
+}
+
+@utility bg-gradient-brand {
+  @apply bg-gradient-to-r from-[#ff0033] to-[#b3001b];
+}
+
+@utility glow-red {
+  box-shadow: 0 0 20px rgba(255, 0, 51, 0.3);
+}
+
+@utility glow-red-strong {
+  box-shadow: 0 0 30px rgba(255, 0, 51, 0.6);
+}
